@@ -10,8 +10,8 @@
     "finish-args" : [
         "--share=network",
         "--share=ipc",
-        "--socket=fallback-x11",
         "--device=dri",
+        "--socket=fallback-x11",
         "--socket=wayland"
     ],
     "build-options" : {
@@ -42,8 +42,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://github.com/xanathar/tabela/releases/download/v1.1.0/tabela-1.1.0.tar.xz",
-                    "sha256" : "04d7242258826235c2d7a759f315a26d40e9c9d9b01f5cd253677a97bdded90f"
+                    "url" : "https://github.com/xanathar/tabela/releases/download/v1.2.0/tabela-1.2.0.tar.xz",
+                    "sha256" : "e57da688b56ade93669d9fdf08a9d24463a2723b205f25907a16dcb6c305eb78"
                 }
             ],
             "config-opts" : [
