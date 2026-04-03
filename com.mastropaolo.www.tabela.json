@@ -23,32 +23,20 @@
             "RUST_LOG" : "tabela=debug"
         }
     },
-    "cleanup" : [
-        "/include",
-        "/lib/pkgconfig",
-        "/man",
-        "/share/doc",
-        "/share/gtk-doc",
-        "/share/man",
-        "/share/pkgconfig",
-        "*.la",
-        "*.a"
-    ],
     "modules" : [
         {
             "name" : "tabela",
             "builddir" : true,
             "buildsystem" : "meson",
+            "config-opts" : [
+                "-Dbuildtype=release"
+            ],
             "sources" : [
                 {
                     "type" : "archive",
                     "url" : "https://github.com/xanathar/tabela/releases/download/v1.2.0/tabela-1.2.0.tar.xz",
                     "sha256" : "e57da688b56ade93669d9fdf08a9d24463a2723b205f25907a16dcb6c305eb78"
                 }
-            ],
-            "config-opts" : [
-                "--buildtype",
-                "release"
             ]
         }
     ]
